@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ultrapro-player-v6';
+const CACHE_NAME = 'ultrapro-player-v7';
 const APP_SHELL = [
   './',
   './index.html'
