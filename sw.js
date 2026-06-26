@@ -1,7 +1,7 @@
 const CACHE_NAME = 'ultrapro-player-v6';
 const APP_SHELL = [
   './',
-  './you_re.html'
+  './index.html'
 ];
 
 // Install: cache the app shell
@@ -47,7 +47,7 @@ self.addEventListener('fetch', e => {
           caches.open(CACHE_NAME).then(cache => cache.put(e.request, resClone));
         }
         return res;
-      }).catch(() => caches.match('./you_re.html'));
+      }).catch(() => caches.match('./index.html'));
     })
   );
 });
